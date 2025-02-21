@@ -17,9 +17,9 @@ const ulApp = document.getElementById('item-list');
 
 // 2. work : manipulation
 function addItem(){
-    const li = document.createElement('li');
-    li.textContent= 'item 4 (added)'
-    ulApp.appendChild(li);
+    const liApp = document.createElement('li');
+    liApp.textContent= 'item 4 (added)'
+    ulApp.appendChild(liApp);
 }
 
 // 3. mouse event
@@ -29,13 +29,13 @@ button2.onclick = addItem;
 
 // 1. setup: access elements
 const button3 = document.getElementById('change-text');
-const allItems  = document.querySelectorAll('li');
+const allItemsApp  = document.querySelectorAll('li');
 
 // 2. work : manipulation
 function changeColor(){
-    for (const q1Key in allItems) {
-        allItems[q1Key].style.color = "blue";
-        console.log(allItems[q1Key]);
+    for (const q1Key in allItemsApp) {
+        allItemsApp[q1Key].style.color = "blue";
+        console.log(allItemsApp[q1Key]);
       }
 }
 
@@ -47,11 +47,11 @@ button3.addEventListener('mouseover', changeColor);
 
 const ulElement = document.getElementById('item-list');
 
-function removeChild(){
+function removeChildApp(){
     ulElement.removeChild(ulElement.lastElementChild);
 }
 
-document.addEventListener('dblclick', removeChild);
+document.addEventListener('dblclick', removeChildApp);
 
 
 // 5. Update the paragraph text when the mouse moves over the heading.
