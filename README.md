@@ -25,3 +25,15 @@
 4. **Remove the last list item when you double-click anywhere on the page.**  
 5. **Update the paragraph text when the mouse moves over the heading.**
 
+---
+
+### **Ticket 3: Advanced DOM Manipulation with Events**
+
+**Tasks:**
+
+1. **Hide the heading when the "Hide Heading" button is clicked.**
+2. **Show the heading when the "Show Heading" button is clicked.**
+3. **Change the color of the heading when the "Change Heading Color" button is clicked.**
+4. **Toggle the visibility of the heading with a single button (combine hide and show functionality).**
+5. **Automatically change the heading color every second (use `setInterval`).**
+---
