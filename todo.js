@@ -1,18 +1,18 @@
 // 1. Add a new task to the list when the "Add Task" button is clicked.
 
 // 1. setup: access elements
-const button = document.getElementById('add-task');
+const buttonToDo = document.getElementById('add-task');
 const ulTodo     = document.getElementById('todo-list');
 
 // 2. work : manipulation
 function createItem(){
-    const li = document.createElement('#todo-list li');
-    li.textContent = 'Task 3';
-    ulTodo.appendChild(li);
+    const liTodo = document.createElement('li');
+    liTodo.textContent = 'Task 3';
+    ulTodo.appendChild(liTodo);
 }
 
 // 3. mouse event
-button.addEventListener('click', createItem);
+buttonToDo.addEventListener('click', createItem);
 
 // 2. Remove the last task from the list when the "Remove Task" button is clicked.
 
@@ -45,3 +45,19 @@ function clearList(){
 clearButton.addEventListener('click', clearList);
 
 // 4. Toggle a 'completed' class on the list items when clicked.
+
+// 1. setup: access elements
+const allItems4 = document.querySelectorAll('#todo-list li');
+
+// 2. work : manipulation
+function toggleClass() {
+    this.classList.toggle('completed'); // Toggle the 'completed' class on click
+}
+
+allItems4.forEach(item => {
+    item.addEventListener('click', toggleClass);
+});
+
+// 5. Style the completed tasks to have a different background color.
+
+// Modify the .completed class in the <style> section to change the background color.

@@ -29,7 +29,7 @@ button2.onclick = addItem;
 
 // 1. setup: access elements
 const button3 = document.getElementById('change-text');
-const allItemsApp  = document.querySelectorAll('#todo-list li');
+const allItemsApp  = document.querySelectorAll('#item-list li');
 
 // 2. work : manipulation
 function changeColor(){
@@ -66,7 +66,6 @@ function changePText(){
     for(let i = 0; i < paragrpahs.length; i++){
         paragrpahs[i].innerText = "Updated text!!!";
     }
-    console.log('inside');
 }
 
 // 3. mouse event
