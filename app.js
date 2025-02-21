@@ -29,14 +29,14 @@ button2.onclick = addItem;
 
 // 1. setup: access elements
 const button3 = document.getElementById('change-text');
-const allItemsApp  = document.querySelectorAll('#item-list li');
-
+const ulChange = document.getElementById('item-list');
+const allItemsApp  = ulChange.getElementsByTagName('li');
+    
 // 2. work : manipulation
 function changeColor(){
-    for (const q1Key in allItemsApp) {
-        allItemsApp[q1Key].style.color = "blue";
-        console.log(allItemsApp[q1Key]);
-      }
+    for (let i= 0; i < allItemsApp.length; i++){
+        allItemsApp[i].style.color= 'blue'
+    }
 }
 
 // 3. mouse event
