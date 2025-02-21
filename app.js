@@ -13,13 +13,13 @@ buttonApp.onclick = changeText;
 
 // 1. setup: access elements
 const button2 = document.getElementById('add-item');
-const ul = document.getElementById('item-list');
+const ulApp = document.getElementById('item-list');
 
 // 2. work : manipulation
 function addItem(){
     const li = document.createElement('li');
     li.textContent= 'item 4 (added)'
-    ul.appendChild(li);
+    ulApp.appendChild(li);
 }
 
 // 3. mouse event

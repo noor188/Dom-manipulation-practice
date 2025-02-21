@@ -8,7 +8,7 @@ const ul     = document.getElementById('todo-list');
 function createItem(){
     const li = document.createElement('li');
     li.textContent = 'Task 3';
-    ul.appendChild(li);
+    ulApp.appendChild(li);
 }
 
 // 3. mouse event
@@ -21,7 +21,7 @@ const removeButton = document.getElementById('remove-task');
 
 // 2. work : manipulation
 function removeItem(){
-    ul.removeChild(ul.lastElementChild);
+    ulApp.removeChild(ulApp.lastElementChild);
 }
 
 // 3. mouse event
@@ -38,7 +38,7 @@ function clearList(){
     // for (let i = 0; i< allItems.length; i++){
     //     allItems[i].remove();
     // }
-    ul.innerHTML='';
+    ulApp.innerHTML='';
 }
 
 // 3. mouse event
