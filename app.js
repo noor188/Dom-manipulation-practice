@@ -1,13 +1,13 @@
 
 
 // 1. Change the text of the main heading when the "Change Heading Text" button is clicked.
-const button = document.getElementById('change-text');
+const buttonApp = document.getElementById('change-text');
 function changeText(){
     document.getElementById('main-heading').innerHTML =
     "Button clicked (#change-text)!!";
    }
 
-button.onclick = changeText; 
+buttonApp.onclick = changeText; 
 
 // 2. Add a new list item when the "Add List Item" button is clicked.
 
