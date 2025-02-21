@@ -11,7 +11,7 @@ function createItem(){
     ulTodo.appendChild(liTodo);
 }
 
-// 3. mouse event
+// 3. event
 buttonToDo.addEventListener('click', createItem);
 
 // 2. Remove the last task from the list when the "Remove Task" button is clicked.
@@ -24,7 +24,7 @@ function removeItem(){
     ulTodo.removeChild(ulTodo.lastElementChild);
 }
 
-// 3. mouse event
+// 3. event
 removeButton.addEventListener('click', removeItem);
 
 // 3. Clear all tasks when the "Clear List" button is clicked.
@@ -41,7 +41,7 @@ function clearList(){
     ulTodo.innerHTML='';
 }
 
-// 3. mouse event
+// 3. event
 clearButton.addEventListener('click', clearList);
 
 // 4. Toggle a 'completed' class on the list items when clicked.

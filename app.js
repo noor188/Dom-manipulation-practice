@@ -22,7 +22,7 @@ function addItem(){
     ulApp.appendChild(liApp);
 }
 
-// 3. mouse event
+// 3. event
 button2.onclick = addItem;
 
 // 3. Change the color of all list items to blue when you hover over the "Change Heading Text" button.
@@ -39,7 +39,7 @@ function changeColor(){
     }
 }
 
-// 3. mouse event
+// 3. event
 button3.addEventListener('mouseover', changeColor);
 
 
@@ -68,5 +68,5 @@ function changePText(){
     }
 }
 
-// 3. mouse event
+// 3. event
 heading.addEventListener('mouseover', changePText);
