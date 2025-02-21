@@ -73,7 +73,7 @@ function changeColorHeader(){
 }
 
 // 3. event
-setInterval(changeColorHeader, 1000); // in ms
+setInterval(changeColorHeader, 10); // in ms
 
 
 
