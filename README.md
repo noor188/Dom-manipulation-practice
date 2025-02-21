@@ -22,3 +22,6 @@
 1. **Add a new task to the list when the "Add Task" button is clicked.**
 2. **Remove the last task from the list when the "Remove Task" button is clicked.**
 3. **Clear all tasks when the "Clear List" button is clicked.**
+4. **Remove the last list item when you double-click anywhere on the page.**  
+5. **Update the paragraph text when the mouse moves over the heading.**
+
