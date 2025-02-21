@@ -2,13 +2,13 @@
 
 // 1. setup: access elements
 const button = document.getElementById('add-task');
-const ul     = document.getElementById('todo-list');
+const ulTodo     = document.getElementById('todo-list');
 
 // 2. work : manipulation
 function createItem(){
     const li = document.createElement('li');
     li.textContent = 'Task 3';
-    ulApp.appendChild(li);
+    ulTodo.appendChild(li);
 }
 
 // 3. mouse event
@@ -21,7 +21,7 @@ const removeButton = document.getElementById('remove-task');
 
 // 2. work : manipulation
 function removeItem(){
-    ulApp.removeChild(ulApp.lastElementChild);
+    ulTodo.removeChild(ulTodo.lastElementChild);
 }
 
 // 3. mouse event
@@ -38,7 +38,7 @@ function clearList(){
     // for (let i = 0; i< allItems.length; i++){
     //     allItems[i].remove();
     // }
-    ulApp.innerHTML='';
+    ulTodo.innerHTML='';
 }
 
 // 3. mouse event
