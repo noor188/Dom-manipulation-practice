@@ -6,7 +6,7 @@ const ulTodo     = document.getElementById('todo-list');
 
 // 2. work : manipulation
 function createItem(){
-    const li = document.createElement('li');
+    const li = document.createElement('#todo-list li');
     li.textContent = 'Task 3';
     ulTodo.appendChild(li);
 }
@@ -31,7 +31,7 @@ removeButton.addEventListener('click', removeItem);
 
 // 1. setup: access elements
 const clearButton = document.getElementById('clear-list');
-const allItems = document.querySelectorAll('li');
+const allItems = document.querySelectorAll('#todo-list li');
 
 // 2. work : manipulation
 function clearList(){
